@@ -53,7 +53,7 @@ class GetWeather(BaseRequest):
     def gat_weather(self):
         try:
             self.data_now = self._get(url=self.url_now, params=self.params).json().get("now", {})
-            self.data_3d = self._get(url=self.url_3d, params=self.params).json().get("daily", [{}])[0]
+            self.data_3d = self._get(url=self.url_3d, params=self.params).json().get("daily", [{}])[1]
             self.save_data()
             self.update_time = datetime.datetime.now()
             self.logger.info("获取天气数据成功")

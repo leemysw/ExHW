@@ -103,6 +103,7 @@ class App:
 
     def __call__(self, *args, **kwargs):
         while True:
+            logger.info("runtime-dir: " + os.path.dirname(__file__))
             try:
                 new_image = Image.new("RGB", (128, 296), color=(255, 255, 255))
                 new_image, y = self.draw_header(new_image)

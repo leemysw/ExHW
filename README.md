@@ -28,9 +28,21 @@
   python3 app.py
   ```
 
+* 如果需要打包成左面软件 
+
+  ```shell
+  pip install pyinstaller
+  pyinstaller -F -w -i data/icon.ico ---specpath app.spec app.py
+  pyinstaller app.spec
+  ```
   
-
-
+  > 上述代码将在项目地址下的dist文件夹生成app.exe文件，双击即可运行
+  >
+  > 如需取消终端显示，在后台运行，修改`app.spec`文件中`console`，设置为`False`
+  >
+  > ```python
+  > console=False
+  > ```
 
 
 ### PREVIEW

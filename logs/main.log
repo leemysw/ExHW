@@ -1,7 +1,6 @@
-[2023-05-21 22:34:40]:  MainProcess INFO    | get_weather         | gat_weather    | 59  | 获取天气数据成功
-[2023-05-21 22:34:40]:  MainProcess INFO    | write_image         | write          | 77  | Zephyr 版本:a301e37
-[2023-05-21 22:34:40]:  MainProcess INFO    | write_image         | write          | 78  | ZMK 版本:   b7786b2
-[2023-05-21 22:34:40]:  MainProcess INFO    | write_image         | write          | 79  | HW 版本:    ddb7a58
-[2023-05-21 22:34:40]:  MainProcess INFO    | write_image         | write          | 85  | 图片刷新完成
-[2023-05-21 22:34:40]:  MainProcess INFO    | app                 | __call__       | 113 | 图片将在30min后更新， 使用ctrl + c 退出
-[2023-05-21 22:34:46]:  MainProcess INFO    | app                 | __call__       | 116 | 用户终止程序，3s后退出
+[2023-05-22 22:10:45]:  MainProcess INFO    | get_weather         | gat_weather    | 59  | 获取天气数据成功
+[2023-05-22 22:10:46]:  MainProcess INFO    | write_image         | write          | 77  | Zephyr 版本:a301e37
+[2023-05-22 22:10:46]:  MainProcess INFO    | write_image         | write          | 78  | ZMK 版本:   b7786b2
+[2023-05-22 22:10:46]:  MainProcess INFO    | write_image         | write          | 79  | HW 版本:    ddb7a58
+[2023-05-22 22:10:46]:  MainProcess INFO    | write_image         | write          | 85  | 图片刷新完成
+[2023-05-22 22:10:46]:  MainProcess INFO    | app                 | __call__       | 113 | 图片将在30min后更新， 使用ctrl + c 退出

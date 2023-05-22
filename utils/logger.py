@@ -13,6 +13,7 @@
 
 import sys
 import time
+import pathlib
 import logging
 from typing import Optional
 from logging import handlers
@@ -76,6 +77,9 @@ def setup_logger(name: str,
     if save_log or filename:
         if filename is None:
             filename = time.strftime("%Y-%m-%d_%H.%M.%S", time.localtime()) + ".log"
+
+        if not pathlib.Path(filename).parent.exists():
+            pathlib.Path(filename).parent.mkdir()
 
         if rotating_time:
             # 每 1(interval) 天(when) 重写1个文件,保留7(backupCount) 个旧文件；when还可以是Y/m/H/M/S

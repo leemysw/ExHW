@@ -24,6 +24,11 @@ for lib in library_paths:
         hidapi = ctypes.cdll.LoadLibrary(abspath("utils/hid") + "/" + lib)
         break
     except OSError:
+        try:
+            hidapi = ctypes.cdll.LoadLibrary(lib)
+            break
+        except OSError:
+            pass
         pass
 else:
     error = "Unable to load any of the following libraries:{}" \
